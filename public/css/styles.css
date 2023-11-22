@@ -3,9 +3,9 @@ body{
 }
 
 .mi-navbar {
-    background-color: rgba(66, 47, 67, 0.89) !important; /* El último número (0.8) controla la transparencia (0 completamente transparente, 1 completamente opaco) */
-    backdrop-filter: blur(10px); /* Propiedad para añadir un efecto de desenfoque */
-    -webkit-backdrop-filter: blur(10px); /* Prefijo para navegadores WebKit */
+    background-color: rgba(66, 47, 67, 0.92) !important; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
 }
 .mi-navbar .navbar-nav .nav-link {
     color: #ffffff; 
@@ -48,7 +48,7 @@ body{
 }
 
 .text-descriptor p {
-    color: #666666;
+    color: #422F43;
     font-size: 17px; 
 }
 .centered-button {
@@ -63,6 +63,12 @@ body{
    margin-bottom: 10px;
    font-size: 18px;
   }
+
+  .btn-primary:hover {
+    background-color: #422F43; /* Cambia "tuNuevoColor" al color que prefieras */
+    border-color: #422F43; /* Puedes ajustar el color del borde si es necesario */
+    color: #f5e4f7; /* Puedes ajustar el color del texto al hacer hover si es necesario */
+}
 
   
 
