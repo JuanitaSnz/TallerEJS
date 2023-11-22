@@ -62,17 +62,18 @@ body{
 
   
   .btn-primary {
-    background-color: #dc9ce4;
-   border-color: #dc9ce4;
+    background-color: #422F43;
+    border-color: #422F43;
    margin-bottom: 10px;
    font-size: 18px;
   }
 
   .btn-primary:hover {
-    background-color: #422F43;
-    border-color: #422F43;
+    background-color: #dc9ce4;
+   border-color: #dc9ce4;
     color: #f5e4f7; 
 }
+
 
   
 .card {
@@ -82,8 +83,34 @@ body{
     background-color: #f5e4f7; 
 }
 
+.card-title {
+    color: #422F43;
+}
 .card:last-child {
     margin-right: 0;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
