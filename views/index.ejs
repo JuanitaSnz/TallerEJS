@@ -3,12 +3,14 @@
 <%- include('templates/header.ejs')%>
 <body>
     <%- include('templates/navBar.ejs')%>
-    
     <div class="text-descriptor">
       <h2>Bienvenido a PsicoGuía: Tu Directorio de Profesionales en Psicología</h2>
       <p>En PsicoGuía, reconocemos la importancia de la salud mental y el bienestar emocional en la vida de cada individuo. Nos enorgullece presentarte un espacio diseñado para conectar a quienes buscan apoyo emocional con profesionales en psicología dedicados y calificados.</p>
   </div>
-  <button type="button" class="btn btn-primary centered-button">Consulta aquí</button>
+  <div class="button-container container">
+    <a href="/consult" class="btn btn-primary centered-button">Consulta aquí</a>
+  </div>
+  
     <div class="container carousel-container">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
