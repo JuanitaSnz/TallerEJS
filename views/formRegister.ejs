@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('templates/header.ejs')%>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card_header" style="background-color: #dc9ce4;">
+                <h1>Agregar psicologo/a</h1>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="input-name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input-description" class="form-label">Descripción</label>
+                                <input type="text" class="form-control" id="description">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input-email" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="select-mod" class="form-label">Selecione modalidad</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Presencial</option>
+                                    <option value="2">Virtual</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="input-last-name" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="last-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input-value" class="form-label">Valor Consulta</label>
+                                <input type="number" class="form-control" id="consult-value">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input-value" class="form-label">N° Celular</label>
+                                <input type="number" class="form-control" id="n-phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input-dir" class="form-label">Direccion</label>
+                                <input type="text" class="form-control" id="dir">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>    
