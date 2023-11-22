@@ -74,32 +74,74 @@ body{
     color: #f5e4f7; 
 }
 
+.btn-danger{
+    background-color: #D71313;
+    border-color: #D71313;
+   margin-bottom: 10px;
+   font-size: 18px;
+}
 
-  
-.card {
+.btn-danger:hover{
+    background-color:#FF8C8C;
+   border-color: #FF8C8C;
+    color: #f5e4f7; 
+}
+.container-card-centered {
+    max-width: 1200px; 
+    margin: 50px auto; 
+    padding-top: 5px; 
+}
+
+.container-form{
+    max-width: 800px; 
+    margin: 50px auto; 
+    padding-top: 5px; 
+}
+
+.card-table .card-header{
+    background-color: #422F43; 
+    color: #ffffff;
+}
+
+.card-table table thead th {
+    background-color: #dc9ce4; 
+    color: #ffffff; 
+    border: 2px solid #ffffff;
+}
+.card-table{
+    background-color: #F4ECFA;
+}
+
+.card-form .card-header{
+    background-color: #422F43; 
+    color: #ffffff;
+}
+.card-form{
+    background-color: #E5CFF7;
+}
+
+.card-info {
     max-width: 800px;
     margin: 20px 10px 20px 0; 
     padding-top: 15px; 
-    background-color: #f5e4f7; 
+    background-color: #E5CFF7; 
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-.card-title {
-    color: #422F43;
-}
-.card:last-child {
+.card-info:last-child {
     margin-right: 0;
 }
 
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card-info:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card-info {
+    animation: fadeInUp 0.5s ease-out;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.card {
-    animation: fadeInUp 0.5s ease-out;
+.card-info .card-title {
+    color: #422F43; 
 }
 
 @keyframes fadeInUp {
@@ -112,7 +154,3 @@ body{
         transform: translateY(0);
     }
 }
-
-
-
-  
