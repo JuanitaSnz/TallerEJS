@@ -1,0 +1,73 @@
+body{
+    background-color: #f5e4f7;
+}
+
+.mi-navbar {
+    background-color: rgba(66, 47, 67, 0.89) !important; /* El último número (0.8) controla la transparencia (0 completamente transparente, 1 completamente opaco) */
+    backdrop-filter: blur(10px); /* Propiedad para añadir un efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Prefijo para navegadores WebKit */
+}
+.mi-navbar .navbar-nav .nav-link {
+    color: #ffffff; 
+  }
+  .navbar-nav .nav-item {
+    margin-right: 25px; 
+    margin-left: 25px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; 
+}
+
+  .mi-navbar .navbar-nav .nav-link:hover {
+    color: #dc9ce4;
+}
+
+.mi-navbar .navbar-toggler-icon {
+    filter: invert(1); 
+}
+.navbar-toggler-icon:hover {
+    filter: invert(0.5);
+  }
+
+  .carousel-container {
+    max-width: 800px; 
+    margin: auto; 
+}
+
+.text-descriptor {
+    max-width: 1500px; 
+    text-align: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-descriptor h2 {
+    color: #422F43;
+}
+
+.text-descriptor p {
+    color: #666666;
+    font-size: 17px; 
+}
+.centered-button {
+    display: block;
+    margin: auto;
+  }
+
+  
+  .btn-primary {
+    background-color: #dc9ce4;
+   border-color: #dc9ce4;
+   margin-bottom: 10px;
+   font-size: 18px;
+  }
+
+  
+
+
+
+
+
+  
