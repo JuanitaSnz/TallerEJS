@@ -51,6 +51,10 @@ body{
     color: #422F43;
     font-size: 17px; 
 }
+.button-container {
+    max-width: 230px; 
+    margin: auto;
+}
 .centered-button {
     display: block;
     margin: auto;
@@ -65,14 +69,22 @@ body{
   }
 
   .btn-primary:hover {
-    background-color: #422F43; /* Cambia "tuNuevoColor" al color que prefieras */
-    border-color: #422F43; /* Puedes ajustar el color del borde si es necesario */
-    color: #f5e4f7; /* Puedes ajustar el color del texto al hacer hover si es necesario */
+    background-color: #422F43;
+    border-color: #422F43;
+    color: #f5e4f7; 
 }
 
   
+.card {
+    max-width: 800px;
+    margin: 20px 10px 20px 0; 
+    padding-top: 15px; 
+    background-color: #f5e4f7; 
+}
 
-
+.card:last-child {
+    margin-right: 0;
+}
 
 
 
