@@ -3,60 +3,65 @@
 <%- include('templates/header.ejs')%>
 <body>
     <%- include('templates/navBar.ejs') %>
-    <div class="container">
-        <div class="card">
-            <div class="card_header" style="background-color: #dc9ce4;">
+    <div class="container-card-centered">
+        <div class="card card-table">
+            <div class="card-header" >
                 <h1>Agregar psicologo/a</h1>
             </div>
             <div class="card-body">
-                <table class="table-light  table-success table-striped" style="justify-content: center; align-items: center;">
-                    <thead style="background-color: #dc9ce4;">
-                      <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Descripción</th>
-                        <th scope="col">Modalidad</th>
-                        <th scope="col">Correo</th>
-                        <th scope="col">N° Celular</th>
-                        <th scope="col">Dirección</th>
-                        <th scope="col">Acciones</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>Presencial</td>
-                        <td>@mdo</td>
-                        <td>315789325</td>
-                        <td>Consultorio 208, Centro Empresarial Suamux</td>
-                        <td>
-                            <button type="button" class="btn btn-primary" id="edit-btn">Editar</button>
-                            <button type="button" class="btn btn-danger" id="delete-btn">Eliminar</button>    
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>Virtual</td>
-                        <td>@fat</td>
-                        <td>3215649657</td>
-                        <td>Microsoft Teams</td>
-                        <td>
-                            <button type="button" class="btn btn-primary" id="edit-btn">Editar</button>
-                            <button type="button" class="btn btn-danger" id="delete-btn">Eliminar</button>    
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  
-                  <a href="/register" class="btn btn-primary" id="add-btn">Agregar</a>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="table-primary">
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Modalidad</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">N° Celular</th>
+                                <th scope="col">Dirección</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Presencial</td>
+                                <td>@mdo</td>
+                                <td>315789325</td>
+                                <td>Consultorio 208, Centro Empresarial Suamux</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary">Editar</a>
+                                    <a href="#" class="btn btn-danger">Eliminar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Presencial</td>
+                                <td>@mdo</td>
+                                <td>315789325</td>
+                                <td>Consultorio 208, Centro Empresarial Suamux</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary">Editar</a>
+                                    <a href="#" class="btn btn-danger">Eliminar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <a href="/register" class="btn btn-primary">Agregar</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-</html>    
+</html>
