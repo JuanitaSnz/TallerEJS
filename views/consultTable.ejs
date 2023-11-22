@@ -26,39 +26,23 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <% if(psychologists.size> 0) {
-                                        for (const [k, v] of psychologists) { %>
+                                    <% psychologists.forEach(psy=>{%>
                                         <tr>
-                                            <td>
-                                                <%=v.id%>
-                                            </td>
-                                            <td>
-                                                <%=v.name%>
-                                            </td>
-                                            <td>
-                                                <%=v.description%>
-                                            </td>
-                                            <td>
-                                                <%=v.modality%>
-                                            </td>
-                                            <td>
-                                                <%=v.consultationFee%>
-                                            </td>
-                                            <td>
-                                                <%=v.phoneNumber%>
-                                            </td>
-                                            <td>
-                                                <%=v.address%>
-                                            </td>
+                                            <td><%= psy.id %></td>
+                                            <td><%= psy.name %></td>
+                                            <td><%= psy.description %></td>
+                                            <td><%= psy.modality %></td>
+                                            <td><%= psy.consultationFee %></td>
+                                            <td><%= psy.email %></td>
+                                            <td><%= psy.phoneNumber %></td>
+                                            <td><%= psy.address %></td>
                                             <td>
                                                 <a href="#" class="btn btn-primary">Editar</a>
                                                 <a href="#" class="btn btn-danger">Eliminar</a>
                                             </td>
                                         </tr>
-                                        <%}%>
-                                            <%} else {%>
-                                                <h3>No hay contactos de psicologos</h3>
-                                                <%}%>
+                                    <%});%>
+                                        
                                 </tbody>
                             </table>
                         </div>

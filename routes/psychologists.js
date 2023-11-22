@@ -16,6 +16,7 @@ const psychologists = data.psychologists.map(psy => {
     }
 })
 
+console.log(psychologists)
 router.get("/", (req, res) => {
     res.render('consultTable', {'title': 'Gestión Psicologo/as','psychologists': psychologists})
 })
