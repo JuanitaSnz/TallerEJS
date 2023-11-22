@@ -3,7 +3,6 @@ const ejs= require('ejs');
 const path= require('path');
 const router = require('./routes/index')
 const app= express();
-const data = require('./public/data/psychologists.json')
 
 app.set('PORT',process.env.PORT||3800);
 app.set('views',path.join(__dirname,'/views'))

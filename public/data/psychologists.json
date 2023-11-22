@@ -1,5 +1,34 @@
-[
+{
+    "psychologists": [
+     {
+      "id": "123456789",
+      "name": "Laura Pérez",
+      "description": "Clinical Psychology",
+      "modality": "Presential",
+      "consultationFee": 80000,
+      "email": "laura.perez@example.com",
+      "phoneNumber": "3157891234",
+      "address": "Carrera 12 #34-56, Bogotá"
+    },
     {
-        
+      "id": "987654321",
+      "name": "Carlos Gómez",
+      "description": "Child Psychology",
+      "modality": "Virtual",
+      "consultationFee": 90000,
+      "email": "carlos.gomez@example.com",
+      "phoneNumber": "3109876543",
+      "address": "Calle 78 #90-12, Medellín"
+    },
+    {
+      "id": "456789012",
+      "name": "Ana Ramírez",
+      "description": "Organizational Psychology",
+      "modality": "Presential",
+      "consultationFee": 85000,
+      "email": "ana.ramirez@example.com",
+      "phoneNumber": "3187654321",
+      "address": "Avenida 34 #56-78, Cali"
     }
-]
+  ]
+}

@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('templates/header.ejs')%>
-<body>
-    <%- include('templates/navBar.ejs') %>
-    <div class="container-card-centered">
-        <div class="card card-table">
-            <div class="card-header" >
-                <h1>Agregar psicologo/a</h1>
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table table-striped table-bordered">
-                        <thead class="table-primary">
-                            <tr>
-                                <th scope="col">Id</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Descripción</th>
-                                <th scope="col">Modalidad</th>
-                                <th scope="col">Correo</th>
-                                <th scope="col">N° Celular</th>
-                                <th scope="col">Dirección</th>
-                                <th scope="col">Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>Presencial</td>
-                                <td>@mdo</td>
-                                <td>315789325</td>
-                                <td>Consultorio 208, Centro Empresarial Suamux</td>
-                                <td>
-                                    <a href="#" class="btn btn-primary">Editar</a>
-                                    <a href="#" class="btn btn-danger">Eliminar</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>Presencial</td>
-                                <td>@mdo</td>
-                                <td>315789325</td>
-                                <td>Consultorio 208, Centro Empresarial Suamux</td>
-                                <td>
-                                    <a href="#" class="btn btn-primary">Editar</a>
-                                    <a href="#" class="btn btn-danger">Eliminar</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="row mt-3">
-                    <div class="col">
-                        <a href="/register" class="btn btn-primary">Agregar</a>
+
+    <body>
+        <%- include('templates/navBar.ejs') %>
+            <div class="container-card-centered">
+                <div class="card card-table">
+                    <div class="card-header">
+                        <h1><%=title%></h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Descripción</th>
+                                        <th scope="col">Modalidad</th>
+                                        <th scope="col">Valor Consulta</th>
+                                        <th scope="col">Correo</th>
+                                        <th scope="col">N° Celular</th>
+                                        <th scope="col">Dirección</th>
+                                        <th scope="col">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% if(psychologists.size> 0) {
+                                        for (const [k, v] of psychologists) { %>
+                                        <tr>
+                                            <td>
+                                                <%=v.id%>
+                                            </td>
+                                            <td>
+                                                <%=v.name%>
+                                            </td>
+                                            <td>
+                                                <%=v.description%>
+                                            </td>
+                                            <td>
+                                                <%=v.modality%>
+                                            </td>
+                                            <td>
+                                                <%=v.consultationFee%>
+                                            </td>
+                                            <td>
+                                                <%=v.phoneNumber%>
+                                            </td>
+                                            <td>
+                                                <%=v.address%>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-primary">Editar</a>
+                                                <a href="#" class="btn btn-danger">Eliminar</a>
+                                            </td>
+                                        </tr>
+                                        <%}%>
+                                            <%} else {%>
+                                                <h3>No hay contactos de psicologos</h3>
+                                                <%}%>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col">
+                                <a href="/register" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+    </body>
+
 </html>
