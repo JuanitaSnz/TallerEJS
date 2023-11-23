@@ -8,3 +8,10 @@ router.get('/',(req,res)=>{
 router.use('/consult', psychologists)
 
 module.exports=router;
+
+router.get('/info',(req,res)=>{
+    res.render('info')
+});
+router.get('/register',(req,res)=>{
+    res.render('formRegister')
+});
