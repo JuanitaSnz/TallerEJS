@@ -1,6 +1,6 @@
 {
-    "psychologists": [
-     {
+  "psychologists": [
+    {
       "id": "123456789",
       "name": "Laura Pérez",
       "description": "Clinical Psychology",
@@ -29,6 +29,16 @@
       "email": "ana.ramirez@example.com",
       "phoneNumber": "3187654321",
       "address": "Avenida 34 #56-78, Cali"
+    },
+    {
+      "id": "4ef601f8-d547-4f61-aeaf-8f11c579a252",
+      "name": "frewgwd",
+      "description": "few",
+      "modality": "Presencial",
+      "consultationFee": "",
+      "email": "",
+      "phoneNumber": "",
+      "address": ""
     }
   ]
 }

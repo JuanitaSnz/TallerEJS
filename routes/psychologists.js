@@ -1,8 +1,9 @@
 const express = require('express')
 const router = express.Router()
-const {getAll}=require('../controllers/psychologistsController')
+const {getAll, create}=require('../controllers/psychologistsController')
 
-console.log(psychologists)
 router.get("/", getAll)
+
+router.post("/register", create)
 
 module.exports = router
