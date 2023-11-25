@@ -29,6 +29,26 @@
       "email": "ana.ramirez@example.com",
       "phoneNumber": "3187654321",
       "address": "Avenida 34 #56-78, Cali"
+    },
+    {
+      "id": "ac00bb96-65ab-4b88-89f2-e928de8a9615",
+      "name": "frewgwd",
+      "description": "",
+      "modality": "Presencial",
+      "consultationFee": "",
+      "email": "frew@gmail.com",
+      "phoneNumber": "",
+      "address": ""
+    },
+    {
+      "id": "a793bc71-36e9-44c9-a2dc-444e09d3ba7d",
+      "name": "asd",
+      "description": "",
+      "modality": "Presencial",
+      "consultationFee": "",
+      "email": "asd@hotmail.com",
+      "phoneNumber": "",
+      "address": ""
     }
   ]
 }
