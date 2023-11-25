@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (psychologistId) {
                 if (clickBtn.classList.contains('edit-btn')) {
                     console.log('Editar psicólogo con ID: ' + psychologistId)
+                    //window.location.href = `http://localhost:3800/register/${psychologistId}`
+                    editPsycholigist(psychologistId)
                 } else if (clickBtn.classList.contains('del-btn')) {
                     console.log('Eliminar psicólogo con ID: ' + psychologistId)
 
@@ -42,6 +44,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 });
+
+function editPsycholigist(id) {
+    fetch(`http://localhost:3800/consult/${id}`, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json', // Indica al servidor que esperamos JSON
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(psychologist => {
+        console.log(psychologist);
+        fillForm(psychologist);
+        window.location.href = 'http://localhost:3800/register';
+    })
+    .catch(error => {
+        console.error("Error: ", error)
+    })
+}
+
+function fillForm(psychologist) {
+    
+    nameP.value = psychologist.name || '';
+    description.value = psychologist.description || '';
+    email.value = psychologist.email || '';
+    consultationFee.value = psychologist.consultationFee || '';
+    phoneNumber.value = psychologist.phoneNumber || '';
+    address.value = psychologist.address || '';
+    modality.value = psychologist.modality === 'Presencial' ? 1 : 2;
+}
 
 function deletePsychologist(id) {
     fetch(`http://localhost:3800/consult/${id}`, {

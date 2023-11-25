@@ -40,7 +40,7 @@ module.exports={
         const psychologist = data.psychologists.find(psy => psy.id === id)
 
         if (psychologist) {
-            res.render('psychologistDetail', {psychologist: psychologist})
+            res.json(psychologist)
         } else {
             res.status(404).send('Psicologo no encontrado')
         }
