@@ -53,9 +53,22 @@ module.exports={
         if (index !== -1) {
             data.psychologists[index] = {
                 id, 
-                name: newData.name || data.psychologists[index].name
+                name: newData.name || data.psychologists[index].name,
+                description: newData.description || data.psychologists[index].description,
+                modality: newData.modality || data.psychologists[index].modality,
+                consultationFee: newData.consultationFee || data.psychologists[index].consultationFee,
+                email: newData.email || data.psychologists[index].email,
+                phoneNumber: newData.phoneNumber || data.psychologists[index].phoneNumber,
+                address: newData.address || data.psychologists[index].address
             }
+
+            const dataSave = JSON.stringify(data, null, 2)
+            fs.writeFileSync(dataPath, dataSave)
+            res.status(200).send('Psicólogo actualizado correctamente')
+        } else {
+            res.status(404).send('Psicólogo no encontrado');
         }
+        
     },
     deleteById: (req, res) => {
         const {id} = req.params
