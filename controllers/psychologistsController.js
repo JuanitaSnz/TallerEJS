@@ -34,5 +34,40 @@ module.exports={
         const dataSave = JSON.stringify(data, null, 2)
         fs.writeFileSync(dataPath, dataSave)
         res.status(200).send('ok')
+    },
+    findById: (req, res) => {
+        const {id} = req.params
+        const psychologist = data.psychologists.find(psy => psy.id === id)
+
+        if (psychologist) {
+            res.render('psychologistDetail', {psychologist: psychologist})
+        } else {
+            res.status(404).send('Psicologo no encontrado')
+        }
+    },
+    update: (req, res) => {
+        const {id} = req.params
+        const newData = req.body
+        const index = data.psychologists.findIndex(psy => psy.id === id)
+
+        if (index !== -1) {
+            data.psychologists[index] = {
+                id, 
+                name: newData.name || data.psychologists[index].name
+            }
+        }
+    },
+    deleteById: (req, res) => {
+        const {id} = req.params
+        const index = data.psychologists.findIndex(psy => psy.id === id)
+
+        if (index !== -1) {
+            data.psychologists.splice(index, 1)
+            const dataSave = JSON.stringify(data, null, 2)
+            fs.writeFileSync(dataPath, dataSave)
+            res.status(200).send('Psicologo eliminado correctamente')
+        } else {
+            res.status(404).send('Psicologo no encontrado')
+        }
     }
 }
