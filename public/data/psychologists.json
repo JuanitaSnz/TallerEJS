@@ -1,54 +1,64 @@
 {
   "psychologists": [
     {
-      "id": "123456789",
-      "name": "Laura Pérez",
-      "description": "Clinical Psychology",
-      "modality": "Presential",
-      "consultationFee": 80000,
-      "email": "laura.perez@example.com",
-      "phoneNumber": "3157891234",
+      "id": "204fe96f-dd21-4f84-b520-e13baa406f4b",
+      "name": "Luisa Gonzalez",
+      "description": "Psicología Clinica",
+      "modality": "Presencial",
+      "consultationFee": "80000",
+      "email": "luisa.gonzalez@gmail.com",
+      "phoneNumber": "3213292134",
+      "address": "calle 15a # 27-17, Sogamoso"
+    },
+    {
+      "id": "66179ac4-adc9-477b-aeb4-0a3ae14dc8cf",
+      "name": "Alejandra Villamil",
+      "description": "Enfoque cognitivo conductual",
+      "modality": "Virtual",
+      "consultationFee": "50000",
+      "email": "villamilalejandraq@gmail.com",
+      "phoneNumber": "3026482025",
+      "address": "Bogotá"
+    },
+    {
+      "id": "43177fb5-9bd0-4b10-9588-2f23cd2faa2d",
+      "name": "Daniela Ramirez",
+      "description": "Congnitivo construccionista",
+      "modality": "Virtual",
+      "consultationFee": "60000",
+      "email": "Sentipensarte.psico@gmail.com",
+      "phoneNumber": "31731893",
+      "address": "Medellín"
+    },
+    {
+      "id": "fc149905-020b-44aa-a5b3-91d6a38a968d",
+      "name": "Karla Trujillo",
+      "description": "Terapia Integrativa",
+      "modality": "Virtual",
+      "consultationFee": "100000",
+      "email": "Karlitrujillo@gmail.com",
+      "phoneNumber": "3142183818",
+      "address": "Manizales"
+    },
+    {
+      "id": "a36a51d9-fd95-40f8-85ba-ae0a9df60ec5",
+      "name": "Ana Rodriguez",
+      "description": "Psicología organizacion",
+      "modality": "Presencial",
+      "consultationFee": "85000",
+      "email": "anaRodriguez01@gmail.com",
+      "phoneNumber": "34983024",
       "address": "Carrera 12 #34-56, Bogotá"
     },
     {
-      "id": "987654321",
+      "id": "96fb5b2a-8129-4486-93af-a2a843932df4",
       "name": "Carlos Gómez",
-      "description": "Child Psychology",
-      "modality": "Virtual",
-      "consultationFee": 90000,
-      "email": "carlos.gomez@example.com",
+      "description": "Psicología Clinica",
+      "modality": "Presencial",
+      "consultationFee": "90000",
+      "email": "carlosGomez@gmail.com",
       "phoneNumber": "3109876543",
       "address": "Calle 78 #90-12, Medellín"
-    },
-    {
-      "id": "456789012",
-      "name": "Ana Ramírez",
-      "description": "Organizational Psychology",
-      "modality": "Presential",
-      "consultationFee": 85000,
-      "email": "ana.ramirez@example.com",
-      "phoneNumber": "3187654321",
-      "address": "Avenida 34 #56-78, Cali"
-    },
-    {
-      "id": "ac00bb96-65ab-4b88-89f2-e928de8a9615",
-      "name": "frewgwd",
-      "description": "",
-      "modality": "Presencial",
-      "consultationFee": "",
-      "email": "frew@gmail.com",
-      "phoneNumber": "",
-      "address": ""
-    },
-    {
-      "id": "5b30f5ed-bc0c-4e21-b1bd-3b5540e964fb",
-      "name": "asd",
-      "description": "",
-      "modality": "Presencial",
-      "consultationFee": "",
-      "email": "asd@hotmail.com",
-      "phoneNumber": "",
-      "address": ""
     }
   ]
 }
