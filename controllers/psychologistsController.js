@@ -24,7 +24,7 @@ const getPsychologists=()=>{
 module.exports={
    getAll (req, res) {
         const psychologists=getPsychologists();
-        res.render('consultTable', {'title': 'Gestión Psicologo/as','psychologists': psychologists})
+        res.render('consultTable', {'title': 'Gestión Psicólogo/as','psychologists': psychologists})
     },
     create (req, res) {
         const dataRegister = req.body;
